@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Een website om jquery mee te oefenen">
+    <meta name="keywords" content="Jquery, oefenen, opdracht">
+    <title>Goochelen met tekst</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+    </style>
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+      vaag= 0;
+      $(document).ready(function() {
+        $("#knop1").click(function() {
+          $("p").fadeOut();
+          vaag= 1;
+        });
+      $("#knop2").click(function() {
+          $("p").fadeIn();
+          if (vaag==1) {
+            $("p").css({"color": "#CBAD4C", "background-color": "#000059"});
+          }
+
+        });
+      });
+  </script>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dapibus lectus in risus efficitur, vitae tristique ex semper. In gravida enim orci. Nunc at aliquet neque. Duis scelerisque augue ac luctus ornare. Praesent tellus est, fringilla sed nisl a, aliquam aliquam quam. Nunc mi quam, lobortis ut massa sed, laoreet faucibus risus. Quisque sagittis et est congue interdum.</p>
+    <p>Morbi et lobortis mauris. Donec eu maximus sapien. Sed mauris justo, vestibulum nec massa in, dictum pellentesque ante. Ut sit amet tortor vel nunc aliquam gravida. Pellentesque vestibulum nisi ultricies, gravida ante vel, dignissim urna. In dapibus nunc laoreet suscipit suscipit. Nulla diam sem, facilisis ut scelerisque eu, placerat efficitur dolor. Nunc dictum mattis enim, rhoncus venenatis lectus dignissim eget. Vivamus ac tristique felis. Nam porttitor placerat eros, eu egestas tortor porttitor quis. Nullam suscipit interdum consequat. Curabitur dignissim elementum velit, id varius magna tempor sed.</p>
+    <p>Morbi auctor pharetra risus id consequat. Curabitur ullamcorper neque et tellus blandit malesuada. Fusce vestibulum volutpat sem eget faucibus. Aliquam vel tincidunt felis. Quisque tempor purus sapien, lobortis consectetur sapien volutpat sed. Vestibulum eu neque vitae eros gravida finibus. Curabitur eu ante fermentum, sagittis libero vel, fringilla quam. Morbi pharetra mauris efficitur, pharetra ex sit amet, rhoncus leo. Aliquam erat volutpat. Nulla facilisi.</p>
+    <p>Aliquam at leo venenatis, laoreet risus non, molestie est. Sed purus lacus, semper eget condimentum sit amet, sagittis in mauris. Curabitur porttitor lorem fermentum elementum cursus. Cras interdum augue ac orci consectetur viverra. Ut quis ligula sollicitudin dui suscipit suscipit. Vivamus suscipit turpis ut sodales vehicula. Vivamus ante nulla, luctus nec condimentum a, pellentesque elementum ex. Vestibulum nec facilisis arcu. Curabitur vitae nibh quis elit pharetra rutrum nec eget quam. Mauris lobortis arcu ac tempus vehicula. Sed pulvinar volutpat erat, eget aliquet metus sodales ut.</p>
+    <button type="button" id="knop1" name="button">Laat het artikel verdwijnen</button>
+    <button type="button" id="knop2" name="button">Laat het artikel verschijnen</button>
+  </body>
+</html>

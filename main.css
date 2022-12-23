@@ -1,0 +1,46 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  background-color: #FCFAF5;
+}
+
+p {
+  color: #363AC7;
+  background-color: #85EBB4;
+  text-align: justify;
+  font-size: 22px;
+  max-width: 70%;
+  margin-left: 15%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#knop1 {
+  margin-left: 35%;
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #E291E3;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+#knop2 {
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: #E291E3;
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+}
+
+#knop1:hover {
+  background-color: #4C383F;
+  color: white;
+  border-color: white;
+}
+
+#knop2:hover {
+  background-color: #4C383F;
+  color: white;
+  border-color: white;
+}
